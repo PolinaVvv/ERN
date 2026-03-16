@@ -40,7 +40,38 @@ ${row.text}
 </p>
 
 `
-
+})
 })
 
+
+const SHEET_URL_2 = "https://opensheet.elk.sh/1wLIEhYto-M752oIoyt2ODI9YmosHIm7uy1sny6az-Tk/Olimp"
+fetch(SHEET_URL_2)
+.then(res => res.json())
+.then(data => {
+
+const subject = document.body.dataset.subject
+
+const rows = data.filter(row => row.subject === subject)
+
+if(rows.length === 0) return
+
+// заголовок страницы
+document.getElementById("subject-title-olimp").innerText =
+rows[0].subject_title
+
+// контент
+const container = document.getElementById("content_olimp")
+
+rows.forEach(row => {
+
+container.innerHTML += `
+
+<h2>${row.title}</h2>
+
+<p>
+${row.text}
+</p>
+
+`
+})
 })
