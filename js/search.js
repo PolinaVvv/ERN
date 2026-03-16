@@ -1,10 +1,10 @@
-fetch(/ERN/'menu.html')
+fetch('/ERN/menu.html')
 .then(res => res.text())
 .then(data => {
 document.getElementById("menu").innerHTML = data
 })
 
-fetch('(/ERN/logo.html')
+fetch('/ERN/logo.html')
 .then(res => res.text())
 .then(data => {
 document.getElementById("logo").innerHTML = data
