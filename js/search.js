@@ -10,6 +10,15 @@ fetch('/ERN/logo.html')
 document.getElementById("logo").innerHTML = data
 })
 
+fetch("/footer.html")
+.then(res => res.text())
+.then(data => {
+const footer = document.getElementById("footer-container")
+if(footer){
+footer.innerHTML = data
+}
+})
+
 const SHEET_URL = "https://opensheet.elk.sh/1wLIEhYto-M752oIoyt2ODI9YmosHIm7uy1sny6az-Tk/Subjects"
 
 fetch(SHEET_URL)

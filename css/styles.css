@@ -6,6 +6,8 @@ font-style: normal;
 margin:0;
 background:#e6e5e5;
 color:#9379e0;
+height: 100%;
+min-height:100vh;
 }
 
 .layout{
@@ -42,6 +44,14 @@ color:#dff2e7;
 
 .menu a:hover{
 background:#9379e0;
+}
+
+.footer {
+display:flex;
+/* min-height:15vh; */
+flex-direction:column;
+background:#9379e0;
+color:#dff2e7;
 }
 
 .content{
