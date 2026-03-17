@@ -10,7 +10,7 @@ fetch('/ERN/logo.html')
 document.getElementById("logo").innerHTML = data
 })
 
-fetch("/footer.html")
+fetch("/ERN/footer.html")
 .then(res => res.text())
 .then(data => {
 const footer = document.getElementById("footer-container")
