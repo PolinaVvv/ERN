@@ -2,13 +2,18 @@
 <html lang="ru">
 
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 
 <meta charset="UTF-8">
-<title>Страница</title>
+<title>ЕРН</title>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../css/styles.css">
 
 </head>
+
+<script src="/ERN/js/search.js"></script>
 
 <body>
 
@@ -16,41 +21,37 @@
 
 <div class="sidebar">
 
-<div class="logo">📘 Школьный помощник</div>
+<div id="logo"></div>
 
-<div class="menu">
-
-<a href="../index.html">Главная</a>
-<a href="../study.html">Учеба</a>
-<a href="../docs.html">Документы</a>
-<a href="../extra.html">Внеурочная</a>
-<a href="../life.html">Прочее</a>
-
-</div>
+<div id="menu"></div>
 
 </div>
 
 <div class="content">
 
-<div class="breadcrumb">
-Главная → Раздел → Подраздел
-</div>
-
 <div class="back">
-<a href="javascript:history.back()">← Назад</a>
+<a href="../index.html">← Назад</a>
 </div>
 
-<h1>Название раздела</h1>
+<h1>Документы</h1>
 
-<div class="text">
+<div class="grid">
 
-<p>
+<a class="card" href="holidays.html">
+Положение о каникулах
+</a>
 
-Здесь будет текст раздела.  
-Это рыбный текст.  
-Позже сюда можно добавить реальные ответы на вопросы.
+<a class="card" href="day.html">
+Распорядок учебного дня
+</a>
 
-</p>
+<a class="card" href="dresscode.html">
+Положение о внешнем виде обучающихся
+</a>
+
+<a class="card" href="zayavleniya.html">
+Форма заявления для родителей
+</a>
 
 </div>
 
