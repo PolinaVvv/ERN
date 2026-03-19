@@ -97,3 +97,146 @@ text-decoration:none;
 .opisanie{
     font-weight: 300;
 }
+
+.site-footer{
+padding:40px 20px;
+background:#9379e0;
+}
+
+.footer-inner{
+max-width:900px;
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.footer-text h3{
+margin:0;
+font-size:20px;
+}
+
+.footer-text p{
+margin:5px 0 0;
+color:#dff2e7;
+}
+
+/* форма */
+
+.footer-form{
+display:flex;
+flex-direction:column;
+gap:12px;
+max-width: 400px;
+}
+
+.footer-form input,
+.footer-form textarea{
+padding:12px;
+border-radius:10px;
+border:1px solid #dcefe4;
+font-size:14px;
+transition:.2s;
+}
+
+.footer-form input:focus,
+.footer-form textarea:focus{
+outline:none;
+border-color:#9fdcc5;
+background:#ffffff;
+}
+
+.footer-form textarea{
+min-height:100px;
+resize:vertical;
+}
+
+.footer-form button{
+background:#bcafe4;
+/* border:none; */
+border-width: 0;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+/* transition:.2s; */
+color:#dff2e7;
+}
+
+.footer-form button:hover{
+background:#9379e0;
+border-width: 1px;
+border-color: #bcafe4;
+}
+
+.footer-inner{
+flex-direction:row;
+justify-content:space-between;
+align-items:flex-start;
+gap:40px;
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 2.2fr;
+gap:12px;
+align-items:stretch;
+}
+
+.form-left{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.form-grid textarea{
+resize:vertical;
+}
+
+@media(max-width:600px){
+.form-grid{
+grid-template-columns:1fr;
+}
+}
+
+@media(max-width:600px){
+.footer-inner{
+flex-direction:column;
+align-items: center;
+}
+}
+#success-msg{
+opacity:0;
+transition:opacity .3s ease;
+font-size:14px;
+margin-top:10px;
+}
+
+#submit-btn{
+background:#bcafe4;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+color:#dff2e7;
+}
+
+#submit-btn:hover{
+background:#9379e0;
+border-width: 1px;
+border-color: #bcafe4;
+}
+
+/* состояние загрузки */
+#submit-btn.loading{
+background:#9379e0;
+border-width: 1px;
+border-color: #bcafe4;
+cursor:default;
+}
+
+/* состояние успеха */
+#submit-btn.success{
+background:#16a34a;
+color:white;
+}
