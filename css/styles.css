@@ -16,6 +16,8 @@ min-height:100vh;
 }
 
 .sidebar{
+    /* height: 100%; */
+/* position:inherit; */
 width:260px;
 background:#bcafe4;
 padding:20px;
@@ -32,6 +34,7 @@ align-content: center;
 }
 
 .menu a{
+
 font-weight: 300;
 display:block;
 padding:8px 10px;
@@ -351,3 +354,52 @@ color:#e6e5e5;
 padding:0px 20px 20px ;
 border-top:1px solid #e4f3ec;
 }
+
+/* контакты футер */
+.contacts {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    /* margin-top: 40px; */
+}
+
+.contacts h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contact-card {
+    width: 15em;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.04);
+}
+
+.contact-card p {
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-buttons a {
+    color: #e6e5e5;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.08);
+    transition: 0.2s;
+}
+
+.contact-buttons a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* меню */
