@@ -134,7 +134,7 @@ max-width: 400px;
 .footer-form textarea{
 padding:12px;
 border-radius:10px;
-border:1px solid #dcefe4;
+border:1px solid #e6e5e5;
 font-size:14px;
 transition:.2s;
 }
@@ -143,7 +143,7 @@ transition:.2s;
 .footer-form textarea:focus{
 outline:none;
 border-color:#9fdcc5;
-background:#ffffff;
+background:#e6e5e5;
 }
 
 .footer-form textarea{
@@ -160,7 +160,7 @@ border-radius:10px;
 cursor:pointer;
 font-size:15px;
 /* transition:.2s; */
-color:#dff2e7;
+color:#e6e5e5;
 }
 
 .footer-form button:hover{
@@ -218,7 +218,7 @@ padding:12px;
 border-radius:10px;
 cursor:pointer;
 font-size:15px;
-color:#dff2e7;
+color:#ffffff;
 }
 
 #submit-btn:hover{
@@ -239,4 +239,115 @@ cursor:default;
 #submit-btn.success{
 background:#16a34a;
 color:white;
+}
+
+
+/*  в разделах */
+.textpage table{
+width:100%;
+border-collapse:collapse;
+margin:15px 0;
+}
+
+.textpage th,
+.textpage td{
+border:1px solid #9379e0;
+padding:10px;
+text-align:left;
+}
+
+.textpage th{
+background:#bcafe4;
+color: #e6e5e5;
+}
+.textpage tr:hover{
+background:#f8fdfb;
+}
+
+/* кнопки для скачивания файлов */
+.doc-box{
+margin:15px 0;
+padding:15px;
+border-radius:12px;
+/* background:#f6fbf8; */
+/* border:5px solid #9379e0; */
+display:flex;
+flex-direction:row;
+align-items:center;
+gap:10px;
+}
+
+.doc-btn{
+display:inline-block;
+padding:10px 14px;
+background:#9379e0;
+border-radius:8px;
+text-decoration:none;
+color:#e6e5e5;
+font-size:14px;
+transition:.2s;
+width:fit-content;
+}
+
+.doc-btn:hover{
+background:#bcafe4;
+}
+
+.doc-btn.alt{
+background:#9379e0;
+}
+
+.doc-btn.alt:hover{
+background:#bcafe4;
+}
+
+/* ссылки */
+a{
+color:#9379e0;
+text-decoration:underline;
+}
+
+.ssilci:hover{
+text-decoration:underline;
+color:blue
+
+}
+
+/* выпадающие списки в секциях */
+/* контейнер */
+.accordion{
+/* background:white; */
+border-radius:12px;
+margin-bottom:15px;
+border:3px solid #9379e0;
+overflow:hidden;
+}
+
+/* заголовок */
+.accordion summary{
+padding:16px;
+cursor:pointer;
+font-weight:500;
+}
+
+/* убираем стандартную стрелку */
+.accordion summary::-webkit-details-marker{
+display:none;
+}
+
+/* hover */
+.accordion summary:hover{
+background:#f6fbf8;
+}
+
+/* открытое состояние */
+.accordion[open] summary{
+background:#bcafe4;
+color:#e6e5e5;
+}
+
+/* контент */
+.accordion-content{
+padding:0px 20px 20px ;
+border-top:1px solid #e4f3ec;
 }
