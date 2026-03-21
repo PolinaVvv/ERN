@@ -1,18 +1,18 @@
 // подключение элементов
-fetch('/menu.html')
+fetch('/ERN/menu.html')
 .then(res => res.text())
 .then(data => {
 document.getElementById("menu").innerHTML = data
 })
 
-// fetch('/ERN/logo.html')
-fetch('/logo.html')
+fetch('/ERN/logo.html')
+// fetch('/logo.html')
 .then(res => res.text())
 .then(data => {
 document.getElementById("logo").innerHTML = data
 })
 
-fetch("/footer.html")
+fetch("/ERN/footer.html")
 .then(res => res.text())
 .then(data => {
 const footer = document.getElementById("footer-container")
